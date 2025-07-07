@@ -1,0 +1,1031 @@
+<h1>
+    1. Source code and build
+</h1>
+<h2>
+    1.1 Clone source code
+</h2>
+<p>
+    &nbsp;
+</p>
+<pre><code class="language-plaintext plaintext">git clone https://github.com/huyj2ee/jwt.git</code></pre>
+<h2>
+    &nbsp;
+</h2>
+<h2>
+    1.2. Build and run
+</h2>
+<h3>
+    1.2.1. Build
+</h3>
+<p>
+    &nbsp;
+</p>
+<pre><code class="language-plaintext plaintext">cd jwt</code></pre>
+<h3>
+    &nbsp;
+</h3>
+<h3>
+    1.2.2. Prepare initial data
+</h3>
+<p>
+    &nbsp;
+</p>
+<h3>
+    &nbsp;
+</h3>
+<h3>
+    1.2.3. Run
+</h3>
+<p>
+    &nbsp;
+</p>
+<pre><code class="language-plaintext plaintext">java -jar target/jwt-0.0.1-SNAPSHOT.jar</code></pre>
+<p>
+    &nbsp;
+</p>
+<p>
+    <s>Login with admin account:</s>
+</p>
+<ul>
+    <li style="margin-left:40px;">
+        <s>Username: root</s>
+    </li>
+    <li style="margin-left:40px;">
+        <s>Password: abcd1234</s>
+    </li>
+</ul>
+<h1>
+    &nbsp;
+</h1>
+<h1>
+    2. SRS – Software requirements specification
+</h1>
+<h2>
+    2.1. Introduction
+</h2>
+<p>
+    T.B.D.
+</p>
+<h3>
+    2.1.1. Purpose
+</h3>
+<p>
+    T.B.D.
+</p>
+<h3>
+    2.1.2. Document Convention
+</h3>
+<p>
+    T.B.D.
+</p>
+<h3>
+    2.1.3. Intended Audience and Reading Suggestions
+</h3>
+<p>
+    T.B.D.
+</p>
+<h3>
+    2.1.4. Product Scope
+</h3>
+<p>
+    T.B.D.
+</p>
+<h3>
+    2.1.5. References
+</h3>
+<p>
+    T.B.D.
+</p>
+<h2>
+    &nbsp;
+</h2>
+<h2>
+    2.2. Overall Description
+</h2>
+<p>
+    T.B.D.
+</p>
+<h3>
+    &nbsp;
+</h3>
+<h3>
+    2.2.1. Product Perspective
+</h3>
+<p>
+    <s>Description</s>
+</p>
+<p>
+    <s>Domain model class diagram</s>
+</p>
+<h3>
+    &nbsp;
+</h3>
+<h3>
+    2.2.2. Product Functions
+</h3>
+<p>
+    Product functions are depicted by below system use case diagram:
+</p>
+<figure class="image">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgL5hMNEnWjK2PZbtsK7jXX7w8L26i6vDzh_Tp93YgFbTJlOzMKE-Y5Hqutw09HBtpYJ_0zcrorPghVXnuFGki1Yl30O7qitqkLqNm3KdUh-WcCiomBjZeTRmBw8RSWJ9K9LVZXVNMM67hJFpdbIAL8xMLAG1llOkUp4jUaVK6FJDMyqgTfn8QHIxm7E9A-/s16000/Overview%20Use%20Case%20diagram.png">
+    <figcaption>
+        <strong>Figure</strong> 2.2.2.1. <i>System Use Case diagram</i>
+    </figcaption>
+</figure>
+<p>
+    &nbsp;
+</p>
+<p>
+    Software use case diagram is as below:
+</p>
+<div class="hscrollable_container">
+    <figure class="image">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgG1fx7tlzbPkbVU63kUXxnHxjUvGMIA86B_koXyadIxre2oJyE09u6uwVWJrPoCPtwoQpOtFTn8rIgga5PrGoociC4CJ4Toll5sgQ7DQHke-j3AcSo7EKBrLat8fctPlPXe_z4tJnZG8FQXx8VIjjFbK8q40zmrPvVOCgwYkavc34NGi0cOH572BRGQLUl/s16000/Use%20Case%20diagram.png">
+        <figcaption>
+            <strong>Figure</strong> 2.2.2.2. Software <i>Use Case diagram</i>
+        </figcaption>
+    </figure>
+</div>
+<h4>
+    &nbsp;
+</h4>
+<h4>
+    2.2.2.1. User
+</h4>
+<p>
+    <s>Operations that are supported by system for user is as below:</s>
+</p>
+<h5>
+    &nbsp;
+</h5>
+<h5>
+    <s>Sign in</s>
+</h5>
+<p>
+    <s>Sign in will create a new access token and refresh token for user.</s>
+</p>
+<p>
+    …
+</p>
+<h4>
+    &nbsp;
+</h4>
+<h4>
+    2.2.2.2. Admin
+</h4>
+<p>
+    <s>Operations that are supported by system for admin is as below:</s>
+</p>
+<h5>
+    &nbsp;
+</h5>
+<h5>
+    <s>Create user</s>
+</h5>
+<p>
+    <s>Create user will add a new user object into database.</s>
+</p>
+<p>
+    …
+</p>
+<h3>
+    &nbsp;
+</h3>
+<h3>
+    2.2.3. User Classes and Characteristics
+</h3>
+<h4>
+    <s>User</s>
+</h4>
+<p>
+    <s>User uses system for their operations, user should have knowledge about PC using.</s>
+</p>
+<h4>
+    &nbsp;
+</h4>
+<h4>
+    <s>Admin</s>
+</h4>
+<p>
+    <s>Admin uses system for administrate users and roles operations. Admin should have knowledge about PC using.</s>
+</p>
+<h3>
+    &nbsp;
+</h3>
+<h3>
+    2.2.4. Operating Environment
+</h3>
+<p>
+    <s>Backend: java jre version 17 is installed.</s>
+</p>
+<p>
+    <s>Frontend: browsers support ReactJS (all modern browsers: Edge, Firefox, Chrome, Safari, etc).</s>
+</p>
+<p>
+    &nbsp;
+</p>
+<h3>
+    2.2.5. Design and Implementation Constraints
+</h3>
+<p>
+    <i><s>Configuration setting</s></i><s>:</s>
+</p>
+<ul>
+    <li style="margin-left:40px;">
+        <s>JWT secrete key is stored in application.properties file with key </s><i><s>secret</s></i><s>.</s>
+    </li>
+</ul>
+<p>
+    &nbsp;
+</p>
+<p>
+    <i><s>Constraints:</s></i>
+</p>
+<ul>
+    <li style="margin-left:40px;">
+        <s>For the frontend browser, refresh token is stored as httponly cookies.</s>
+    </li>
+</ul>
+<h3>
+    &nbsp;
+</h3>
+<h3>
+    2.2.6. User Documentation
+</h3>
+<p>
+    none
+</p>
+<h3>
+    &nbsp;
+</h3>
+<h3>
+    2.2.7. Assumptions and Dependencies
+</h3>
+<p>
+    none
+</p>
+<h2>
+    &nbsp;
+</h2>
+<h2>
+    2.3. External Interface Requirements
+</h2>
+<p>
+    T.B.D.
+</p>
+<h3>
+    2.3.1. User Interfaces
+</h3>
+<p>
+    T.B.D.
+</p>
+<h3>
+    2.3.2. Hardware Interfaces
+</h3>
+<p>
+    T.B.D.
+</p>
+<h3>
+    2.3.3. Software Interfaces
+</h3>
+<p>
+    T.B.D.
+</p>
+<h3>
+    2.3.4. Communications Interfaces
+</h3>
+<p>
+    T.B.D.
+</p>
+<h2>
+    &nbsp;
+</h2>
+<h2>
+    2.4. System Features
+</h2>
+<h3>
+    2.4.1. User
+</h3>
+<h4>
+    2.4.1.1. Sign in
+</h4>
+<figure class="image">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBn2STK4AclgBweOJtAwksvHb2o2TnH0A4FUOtvgPNaNn7LC1eeqE39BXmN4tmJqPm_kJ34mW-zgrg9XQdwAShaOi7eGOOP39BYywmmYmWEI0TDFw1mvMF-ZzT8DSUgCptcMf2B6dY5pPbTaq31K8mwkwNrqo_3zyGZj2a2mQAvc4bLl6eJ93L3PUqbUQ2/s16000/sign_in_use_case_diagram.png">
+    <figcaption>
+        <strong>Figure</strong> 2.4.1.1. <i>Sign in use case diagram</i>
+    </figcaption>
+</figure>
+<p>
+    &nbsp;
+</p>
+<figure class="table" style="width:79.45%;">
+    <table class="ck-table-resized">
+        <colgroup><col style="width:24.35%;"><col style="width:75.65%;"></colgroup>
+        <tbody>
+            <tr>
+                <td>
+                    <p style="text-align:right;">
+                        <strong>Use Case ID</strong>
+                    </p>
+                </td>
+                <td>
+                    sign_in
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:right;">
+                        <strong>Use Case Name</strong>
+                    </p>
+                </td>
+                <td>
+                    sign in
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:right;">
+                        <strong>Created By</strong>
+                    </p>
+                </td>
+                <td>
+                    Huy Pham
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:right;">
+                        <strong>Date Created</strong>
+                    </p>
+                </td>
+                <td>
+                    28/07/2024
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:right;">
+                        <strong>Priority</strong>
+                    </p>
+                </td>
+                <td>
+                    normal
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:right;">
+                        <strong>Description</strong>
+                    </p>
+                </td>
+                <td>
+                    This use case allows user to sign in.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:right;">
+                        <strong>Primary Actor</strong>
+                    </p>
+                </td>
+                <td>
+                    User
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:right;">
+                        <strong>Secondary Actor</strong>
+                    </p>
+                </td>
+                <td>
+                    none
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:right;">
+                        <strong>Trigger</strong>
+                    </p>
+                </td>
+                <td>
+                    User make post request to endpoint jwt/v1/signin or user submits credentials at home page in sign out state.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:right;">
+                        <strong>Preconditions</strong>
+                    </p>
+                </td>
+                <td>
+                    none
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:right;">
+                        <strong>Postconditions</strong>
+                    </p>
+                </td>
+                <td>
+                    1. An access token and a refresh token for target user is generated.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:right;">
+                        <strong>Main Flow</strong>
+                    </p>
+                </td>
+                <td>
+                    1. User makes post request to endpoint jwt/v1/signin.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:right;">
+                        <strong>Alternative Flows</strong>
+                    </p>
+                </td>
+                <td>
+                    1A. User submits credentials at home page in sign out state instead of making post request.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:right;">
+                        <strong>Exception flows</strong>
+                    </p>
+                </td>
+                <td>
+                    2A. Backend finds no user by provided username parameter.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:right;">
+                        <strong>Other</strong>
+                    </p>
+                </td>
+                <td>
+                    none
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</figure>
+<h4>
+    &nbsp;
+</h4>
+<h4>
+    2.4.1.2. Sign out
+</h4>
+<p>
+    …
+</p>
+<p>
+    &nbsp;
+</p>
+<h3>
+    2.4.2. Admin
+</h3>
+<h4>
+    2.4.2.1. Create user
+</h4>
+<p>
+    …
+</p>
+<h2>
+    &nbsp;
+</h2>
+<h2>
+    2.5. Other Nonfunctional Requirements
+</h2>
+<p>
+    T.B.D.
+</p>
+<h3>
+    2.5.1. Performance Requirements
+</h3>
+<p>
+    T.B.D.
+</p>
+<h3>
+    2.5.2. Safety Requirements
+</h3>
+<p>
+    T.B.D.
+</p>
+<h3>
+    2.5.3. Security Requirements
+</h3>
+<p>
+    T.B.D.
+</p>
+<h3>
+    2.5.4. Software Quality Attributes
+</h3>
+<p>
+    T.B.D.
+</p>
+<h3>
+    2.5.5. Business Rules
+</h3>
+<p>
+    T.B.D.
+</p>
+<h3>
+    2.5.6. User documentation
+</h3>
+<p>
+    T.B.D.
+</p>
+<h1>
+    &nbsp;
+</h1>
+<h1>
+    3. SDD – Software design description
+</h1>
+<h2>
+    3.1. Introduction
+</h2>
+<h3>
+    3.1.1. Purpose
+</h3>
+<p>
+    <s>This document sketches developed application in a generic view so that developers could follow up this to develop JWT (JSON Web Tokens) library.</s>
+</p>
+<h3>
+    &nbsp;
+</h3>
+<h3>
+    3.1.2. Scope
+</h3>
+<ul>
+    <li style="margin-left:40px;">
+        <i><s>Goal</s></i><s>: implement JWT (JSON Web Tokens) library as SRS document.</s>
+    </li>
+    <li style="margin-left:40px;">
+        <i><s>Description and scope</s></i><s>: please consult SRS document.</s>
+    </li>
+    <li style="margin-left:40px;">
+        <i><s>Benefit, brief description of product</s></i><s>: please consult SRS document.</s>
+    </li>
+</ul>
+<h3>
+    &nbsp;
+</h3>
+<h3>
+    3.1.3. Overview
+</h3>
+<p>
+    T.B.D.
+</p>
+<h3>
+    &nbsp;
+</h3>
+<h3>
+    3.1.4. Reference material
+</h3>
+<ul>
+    <li style="margin-left:40px;">
+        <s>SRS – Software requirements specification</s>
+    </li>
+</ul>
+<h3>
+    &nbsp;
+</h3>
+<h3>
+    3.1.5. Definitions and acronyms
+</h3>
+<p>
+    T.B.D.
+</p>
+<h2>
+    &nbsp;
+</h2>
+<h2>
+    3.2. System overview
+</h2>
+<p>
+    Description
+</p>
+<p>
+    &nbsp;
+</p>
+<p>
+    The product functions are depicted by below use case diagram:
+</p>
+<div class="hscrollable_container">
+    <figure class="image">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgG1fx7tlzbPkbVU63kUXxnHxjUvGMIA86B_koXyadIxre2oJyE09u6uwVWJrPoCPtwoQpOtFTn8rIgga5PrGoociC4CJ4Toll5sgQ7DQHke-j3AcSo7EKBrLat8fctPlPXe_z4tJnZG8FQXx8VIjjFbK8q40zmrPvVOCgwYkavc34NGi0cOH572BRGQLUl/s16000/Use%20Case%20diagram.png">
+        <figcaption>
+            <strong>Figure</strong> 3.2. <i>Use case diagram</i>
+        </figcaption>
+    </figure>
+</div>
+<h2>
+    &nbsp;
+</h2>
+<h2>
+    3.3. System architecture
+</h2>
+<h3>
+    3.3.1. Architectural design
+</h3>
+<p>
+    &nbsp;
+</p>
+<div class="hscrollable_container">
+    <figure class="image">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-NrQ1kvl5ofAwRzv64iJZ6TVS2uNnYbnReDZhJxkmQsnwytb4AZLu3JVLO4qqQfmZ9pPhuqjUpftSvEXiXgzx4V7gowkHxHX7D1yp_YaJPRITKXBKvP7C5GVfVVqJhtQFCNfLHGIy23frJcCP-cfBW8tpk1XIGEl2WicuErMg3FNC36_77hwXMtvVUYjH/s16000/architectural_class_diagram.png">
+        <figcaption>
+            <strong>Figure</strong> 3.3.1. <i>Architectural class diagram</i>
+        </figcaption>
+    </figure>
+</div>
+<h3>
+    &nbsp;
+</h3>
+<h3>
+    3.3.2. &nbsp;Decomposition description
+</h3>
+<h4>
+    3.3.2.1. Static structure
+</h4>
+<p>
+    &nbsp;
+</p>
+<div class="hscrollable_container">
+    <figure class="image">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8ENqHZSCmgokS1LQy88ZZH2U22gqbLPZGYCIhDfe1z_IRMu481ivcUkRQGfaSzDjo2ysSCa_FDJYwkT6WNMLcIlJhoaR2KfE_mFsouhVUR2G-KokCak4Wa0TXzHGe2YXhcqnK_vA5bil3N0HRa3XbwRS6j8UGKZCfIrtpWZtzkjKU_pVUiYtE0Eu6ZSVV/s16000/system_overview_class_diagram.png">
+        <figcaption>
+            <strong>Figure</strong> 3.3.2.1. <i>System overview class diagram</i>
+        </figcaption>
+    </figure>
+</div>
+<h4>
+    &nbsp;
+</h4>
+<h4>
+    3.3.2.2. Use case realizations
+</h4>
+<h5>
+    <strong>3.3.2.2.1. Backend</strong>
+</h5>
+<h6>
+    <strong>3.3.2.2.1.1. </strong>User
+</h6>
+<p>
+    <i>Sign in</i>
+</p>
+<p>
+    &nbsp;
+</p>
+<div class="hscrollable_container">
+    <figure class="image">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvq6GRWnluNGcjLiScl0iiB_ceC1oEfqioWKjuk4pbpefgE3P9cU8j-GX4iymqdqVpevRWMf-1_D_NK9NEnKNiv3fFw424PBiwWBw0MS0d8F6qEIHEslNz5PhkaGdHLu3xMuWWxXqmsSR-zaOM0kT_T6gr_juN0j8FJQA7JKK7tFLJsGQEUBqozpT2IA9D/s16000/sign_in.png">
+        <figcaption>
+            <strong>Figure</strong> 3.3.2.2.1.1.1. <i>Sign in sequence diagram</i>
+        </figcaption>
+    </figure>
+</div>
+<p>
+    …
+</p>
+<h6>
+    &nbsp;
+</h6>
+<h6>
+    <strong>3.3.2.2.1.2. </strong>Admin
+</h6>
+<p>
+    <i><s>Create user</s></i>
+</p>
+<p>
+    <i>…</i>
+</p>
+<h5>
+    &nbsp;
+</h5>
+<h5>
+    <s><strong>3.3.2.2.2. Frontend</strong></s>
+</h5>
+<h6>
+    <s><strong>3.3.2.2.2.1. </strong>User</s>
+</h6>
+<p>
+    <i><s>Sign in</s></i>
+</p>
+<p>
+    <i><s>…</s></i>
+</p>
+<h6>
+    &nbsp;
+</h6>
+<h6>
+    <s><strong>3.3.2.2.2.2. </strong>Admin</s>
+</h6>
+<p>
+    <i><s>Create user</s></i>
+</p>
+<p>
+    <i>…</i>
+</p>
+<h3>
+    &nbsp;
+</h3>
+<h3>
+    3.3.3. Design rationale
+</h3>
+<h4>
+    3.3.3.1. For selecting the architecture
+</h4>
+<p>
+    T.B.D.
+</p>
+<h4>
+    &nbsp;
+</h4>
+<h4>
+    3.3.3.2. For critical issues and trade/offs clarification
+</h4>
+<p>
+    T.B.D.
+</p>
+<h2>
+    &nbsp;
+</h2>
+<h2>
+    3.4. Data design
+</h2>
+<h3>
+    3.4.1. Data description
+</h3>
+<h4>
+    3.4.1.1. Data design
+</h4>
+<p>
+    T.B.D.
+</p>
+<h3>
+    &nbsp;
+</h3>
+<h3>
+    3.4.2. Data dictionary
+</h3>
+<p>
+    T.B.D.
+</p>
+<h2>
+    &nbsp;
+</h2>
+<h2>
+    3.5. Component design
+</h2>
+<h3>
+    3.5.1. Implementation class diagram
+</h3>
+<h4>
+    3.5.1.1. Frontend
+</h4>
+<p>
+    <s>Frontend implementation class diagram is not available because frontend is implemented by React function component with hook.</s>
+</p>
+<h4>
+    &nbsp;
+</h4>
+<h4>
+    3.5.1.2. Backend
+</h4>
+<div class="hscrollable_container">
+    <p>
+        <s>Implementation class diagram</s>
+    </p>
+</div>
+<h3>
+    &nbsp;
+</h3>
+<h3>
+    3.5.2. Classes design
+</h3>
+<p>
+    T.B.D.
+</p>
+<h2>
+    &nbsp;
+</h2>
+<h2>
+    3.6. Human interface design
+</h2>
+<h3>
+    3.6.1. Overview of user interface
+</h3>
+<p>
+    Site map of website is as below:
+</p>
+<p>
+    &nbsp;
+</p>
+<figure class="image">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXJwCeP9RWM_B-jc7nnjV8WGeFfgqiXb59xsLeFHFA0kdk3it_chQE8NGlvligIpPz7HvUWNhc4Px7uCCpfIckQNS96RnuBcLBhC88Q8Sbd7y-c5QyxIuvOuDXT68VB0GDSjtAlCscStvk5YHlUgbp0XBxu5oNVEOmoHfkPiqRO4bUC_tsKOQX5wIN2CNY/s16000/site_map.png">
+    <figcaption>
+        <strong>Figure</strong> 3.6.1. <i>Site map</i>
+    </figcaption>
+</figure>
+<h3>
+    &nbsp;
+</h3>
+<h3>
+    3.6.2. Screen images
+</h3>
+<p>
+    <s>Figma design file is commited to: </s><a href="https://github.com/huyj2ee/jwt/blob/main/frontend/figma/jwt.fig"><s>jwt.fig</s></a>
+</p>
+<p>
+    <s>Live demo site is posted at: </s><a href="https://www.figma.com/proto/nImXYSfvnBhyOHYBfBxdJS/jwt?node-id=0-1&amp;t=G5i7OHlb8kfoXqzd-1"><s>jwt_figma_live</s></a>
+</p>
+<h3>
+    &nbsp;
+</h3>
+<h3>
+    3.6.3. Screen objects and actions
+</h3>
+<p>
+    T.B.D.
+</p>
+<h2>
+    &nbsp;
+</h2>
+<h2>
+    3.7. Requirements matrix
+</h2>
+<p>
+    T.B.D.
+</p>
+<h2>
+    &nbsp;
+</h2>
+<h2>
+    3.8. Appendices
+</h2>
+<p>
+    T.B.D.
+</p>
+<h1>
+    &nbsp;
+</h1>
+<h1>
+    4. Test case
+</h1>
+<h2>
+    4.1. Pre-Condition for all test cases
+</h2>
+<h3>
+    4.1.1. Prepare database and jpa account
+</h3>
+<h3>
+    &nbsp;
+</h3>
+<h3>
+    4.1.2. Create database schema
+</h3>
+<h3>
+    &nbsp;
+</h3>
+<h3>
+    4.1.3. Populate initial data
+</h3>
+<h2>
+    &nbsp;
+</h2>
+<h2>
+    4.2. Test cases
+</h2>
+<h3>
+    4.2.1 Backend
+</h3>
+<h4>
+    4.2.1.1 Signin use case
+</h4>
+<h5>
+    Test case BESignin01
+</h5>
+<ul>
+    <li style="margin-left:40px;">
+        Pre-Condition: <s>a user with username “admin” and password “root” assigned role “admin” is created by executing test case BECreateUser01 and test case BEAssignRole01.</s>
+    </li>
+    <li style="margin-left:40px;">
+        Description: <s>Check response when valid username and password is entered for admin role account that is enabled and not locked.</s>
+    </li>
+    <li style="margin-left:40px;">
+        Test data:
+        <ul>
+            <li style="margin-left:40px;">
+                <s>Username: admin</s>
+            </li>
+            <li style="margin-left:40px;">
+                <s>Password: root</s>
+            </li>
+        </ul>
+    </li>
+    <li style="margin-left:40px;">
+        Test steps:
+        <ul>
+            <li style="margin-left:40px;">
+                <s>Select &nbsp;POST method.</s>
+            </li>
+            <li style="margin-left:40px;">
+                <s>Enter url: http://localhost:8080/jwt/v1/signin</s>
+            </li>
+            <li style="margin-left:40px;">
+                <s>Select Body tab:</s>
+                <ul>
+                    <li style="margin-left:40px;">
+                        <s>Select raw option.</s>
+                    </li>
+                    <li style="margin-left:40px;">
+                        <s>Select JSON format.</s>
+                    </li>
+                    <li style="margin-left:40px;">
+                        <s>Enter body data:</s>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+<p>
+    &nbsp;
+</p>
+<pre><code class="language-plaintext json">{
+  "username": "admin",
+  "password": "root"
+}</code></pre>
+<p>
+    &nbsp;
+</p>
+<ul>
+    <li style="margin-left:80px;">
+        <s>Click Send.</s>
+    </li>
+    <li style="margin-left:40px;">
+        Expected result: <s>Response section has data as below:</s>
+        <ul>
+            <li style="margin-left:40px;">
+                <s>Status: 200 OK</s>
+            </li>
+            <li style="margin-left:40px;">
+                <s>Body:</s>
+                <ul>
+                    <li style="margin-left:40px;">
+                        <s>Format: JSON</s>
+                    </li>
+                    <li style="margin-left:40px;">
+                        <s>Content: a JSON string with “accessToken” and “refreshToken” properties.</s>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+<p>
+    &nbsp;
+</p>
+<pre><code class="language-plaintext json">{
+    "accessToken": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290IiwiaWF0IjoxNzMyNjk4MDA2LCJleHAiOjE3MzI3MzQwMDZ9.Z1ZkERF6Wz_n4Y8l6rRblp_AauS2_L85hSqUtaduLfkdztdXcsMcbxjLpJMz66fGDaIGEdLe7nKh1Urq6AeCBw",
+    "refreshToken": "b4daca95-25ba-4d05-af12-e3c95781391f"
+}</code></pre>
+<p>
+    &nbsp;
+</p>
+<ul>
+    <li style="margin-left:40px;">
+        Pass/Fail: pass
+    </li>
+</ul>
+<p>
+    …
+</p>
+<h4>
+    &nbsp;
+</h4>
+<h4>
+    4.2.1.2 Signout use case
+</h4>
+<p>
+    …
+</p>
+<h3>
+    &nbsp;
+</h3>
+<h3>
+    4.2.2. Frontend
+</h3>
+<p>
+    …
+</p>
+<p>
+    &nbsp;
+</p>
